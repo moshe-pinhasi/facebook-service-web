@@ -24,6 +24,7 @@ appModule.provider('facebook', function () {
 appModule.config(["facebookProvider", function (facebookProvider) {
 	facebookProvider.setConfig({
 			appId      : 'YOUR FB APP ID',
+			cookie	   : true,
 			xfbml      : true,
 			version    : 'v2.6'
 		});
